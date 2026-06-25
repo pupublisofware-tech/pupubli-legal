@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Política de privacidad de Pupubli Software (pupublisofware)." />
+  <title>Política de privacidad — Pupubli Software</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #ffffff;
+      --text: #1e2433;
+      --muted: #5c6478;
+      --border: #e4e8f0;
+      --accent: #7c6cf0;
+      --radius: 12px;
+      --shadow: 0 8px 32px rgba(15, 17, 23, 0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(160deg, #0f1117 0%, #1a1e2a 45%, #13161f 100%);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .topbar {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+    nav a {
+      color: #b8bfd4;
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin-left: 1.25rem;
+    }
+    nav a:hover { color: #fff; }
+    .doc {
+      max-width: 760px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+    }
+    article {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.5rem 2rem;
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.05rem;
+      margin: 1.75rem 0 0.65rem;
+      color: var(--text);
+    }
+    p, li {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 0.85rem;
+    }
+    ul { padding-left: 1.25rem; margin-bottom: 1rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      margin: 1rem 0 1.25rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.65rem 0.75rem;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    th { background: #f6f8fc; color: var(--text); font-weight: 600; }
+    a { color: var(--accent); }
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.5rem 2.5rem;
+      color: #7a8299;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    footer a { color: #b8bfd4; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Pupubli <span>Software</span></a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="terms.html">Términos</a>
+    </nav>
+  </header>
+
+  <main class="doc">
+    <article>
+      <p class="meta">Vigente desde el 24 de junio de 2026 · pupublisofware</p>
+      <h1>Política de privacidad</h1>
+
+      <h2>1. Responsable</h2>
+      <p>
+        <strong>Pupubli Software</strong> (marca <strong>pupublisofware</strong>) es responsable del tratamiento
+        de los datos descritos en esta política, en el marco de sus aplicaciones de escritorio e integraciones con redes sociales.
+      </p>
+
+      <h2>2. Principio general</h2>
+      <p>
+        Nuestras aplicaciones procesan la información <strong>principalmente en tu dispositivo</strong>.
+        No vendemos datos personales. Solo compartimos información con las plataformas que tú conectas,
+        según lo necesario para publicar contenido mediante sus APIs oficiales.
+      </p>
+
+      <h2>3. Datos que tratamos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tipo de dato</th>
+            <th>Uso</th>
+            <th>Dónde se guarda</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tokens OAuth</td>
+            <td>Conectar y publicar en redes autorizadas</td>
+            <td>Tu equipo (cifrado local)</td>
+          </tr>
+          <tr>
+            <td>Perfil básico</td>
+            <td>Mostrar @usuario conectado en la app</td>
+            <td>Tu equipo / memoria de la app</td>
+          </tr>
+          <tr>
+            <td>Contenido multimedia</td>
+            <td>Vídeos e imágenes que eliges publicar</td>
+            <td>Tu equipo; se envía a la red al publicar</td>
+          </tr>
+          <tr>
+            <td>Configuración del editor</td>
+            <td>Flujos, nodos y preferencias de publicación</td>
+            <td>Tu equipo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>4. Seguridad</h2>
+      <ul>
+        <li>No almacenamos contraseñas de TikTok, Instagram u otras redes.</li>
+        <li>El acceso se realiza mediante OAuth oficial de cada plataforma.</li>
+        <li>Los tokens se guardan cifrados en el dispositivo (Electron safeStorage u equivalente).</li>
+      </ul>
+
+      <h2>5. Terceros</h2>
+      <p>
+        Al publicar o conectar una cuenta, aplican también las políticas de la plataforma correspondiente
+        (por ejemplo, TikTok o Meta). Puedes revocar el acceso desde los ajustes de permisos de cada red.
+      </p>
+
+      <h2>6. Conservación</h2>
+      <p>
+        Los datos permanecen en tu dispositivo mientras uses la aplicación. Puedes eliminar tokens y configuración
+        desconectando cuentas o desinstalando la app.
+      </p>
+
+      <h2>7. Tus derechos</h2>
+      <p>
+        Puedes solicitar información, corrección o eliminación de datos que estén bajo nuestro control
+        escribiendo al contacto indicado abajo. Para datos en plataformas de terceros, deberás ejercerlos
+        directamente ante esas plataformas.
+      </p>
+
+      <h2>8. Cambios</h2>
+      <p>
+        Podemos actualizar esta política. La fecha de vigencia al inicio del documento indica la versión actual.
+      </p>
+
+      <h2>9. Contacto</h2>
+      <p>
+        Privacidad y consultas:
+        <a href="mailto:pupublisofware@gmail.com">pupublisofware@gmail.com</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 Pupubli Software · <a href="index.html">Inicio</a> · <a href="terms.html">Términos</a></p>
+  </footer>
+</body>
+</html>

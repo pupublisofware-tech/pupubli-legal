@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pupubli Software — aplicaciones de escritorio para planificar y publicar contenido en redes sociales." />
+  <title>Pupubli Software — pupublisofware</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #ffffff;
+      --text: #1e2433;
+      --muted: #5c6478;
+      --border: #e4e8f0;
+      --accent: #7c6cf0;
+      --accent-2: #ff2d6a;
+      --radius: 12px;
+      --shadow: 0 8px 32px rgba(15, 17, 23, 0.08);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: linear-gradient(160deg, #0f1117 0%, #1a1e2a 45%, #13161f 100%);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    .topbar {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .logo {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+    nav a {
+      color: #b8bfd4;
+      text-decoration: none;
+      font-size: 0.875rem;
+      margin-left: 1.25rem;
+    }
+    nav a:hover { color: #fff; }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+    }
+    .hero {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.5rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(124, 108, 240, 0.1);
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .lead {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 52ch;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      border-color: rgba(124, 108, 240, 0.35);
+      transform: translateY(-2px);
+    }
+    .card h2 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .card a {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.875rem;
+      text-decoration: none;
+    }
+    .card a:hover { text-decoration: underline; }
+    .features {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+      margin-top: 1.5rem;
+    }
+    .features h2 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .features ul {
+      list-style: none;
+      display: grid;
+      gap: 0.65rem;
+    }
+    .features li {
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .features li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    }
+    footer {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 1.5rem 2.5rem;
+      color: #7a8299;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    footer a { color: #b8bfd4; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Pupubli <span>Software</span></a>
+    <nav>
+      <a href="terms.html">Términos</a>
+      <a href="privacy.html">Privacidad</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">pupublisofware</div>
+      <h1>Software para crear y publicar en redes sociales</h1>
+      <p class="lead">
+        Desarrollamos aplicaciones de escritorio e integraciones oficiales con TikTok, Instagram y otras plataformas.
+        El contenido lo controlas tú; nosotros facilitamos la publicación desde un flujo visual.
+      </p>
+    </section>
+
+    <div class="grid">
+      <article class="card">
+        <h2>Términos de servicio</h2>
+        <p>Condiciones de uso de nuestras aplicaciones, responsabilidades y alcance del servicio.</p>
+        <a href="terms.html">Leer términos →</a>
+      </article>
+      <article class="card">
+        <h2>Política de privacidad</h2>
+        <p>Cómo tratamos tokens OAuth, contenido multimedia y datos almacenados en tu dispositivo.</p>
+        <a href="privacy.html">Leer privacidad →</a>
+      </article>
+    </div>
+
+    <section class="features">
+      <h2>Qué ofrecemos</h2>
+      <ul>
+        <li>Aplicaciones de escritorio para planificar y publicar contenido</li>
+        <li>Conexión segura con APIs oficiales (OAuth — sin guardar contraseñas)</li>
+        <li>Publicación de vídeo e imagen en redes autorizadas por el usuario</li>
+        <li>Datos procesados principalmente en el equipo del usuario</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Pupubli Software · <a href="https://github.com/pupublisofware">pupublisofware</a></p>
+    <p style="margin-top:0.35rem">Última actualización: 24 de junio de 2026</p>
+  </footer>
+</body>
+</html>
